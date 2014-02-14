@@ -21,6 +21,7 @@
 		58A05CD118A9272600EF18AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A05CB318A9272600EF18AF /* UIKit.framework */; };
 		58A05CD918A9272600EF18AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58A05CD718A9272600EF18AF /* InfoPlist.strings */; };
 		58A05CDB18A9272600EF18AF /* Public_Private_MethodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A05CDA18A9272600EF18AF /* Public_Private_MethodsTests.m */; };
+		58A05CE618A9294C00EF18AF /* MBFDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A05CE518A9294C00EF18AF /* MBFDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		58A05CD618A9272600EF18AF /* Public Private MethodsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Public Private MethodsTests-Info.plist"; sourceTree = "<group>"; };
 		58A05CD818A9272600EF18AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58A05CDA18A9272600EF18AF /* Public_Private_MethodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Public_Private_MethodsTests.m; sourceTree = "<group>"; };
+		58A05CE418A9294C00EF18AF /* MBFDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFDog.h; sourceTree = "<group>"; };
+		58A05CE518A9294C00EF18AF /* MBFDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				58A05CBF18A9272600EF18AF /* PPAppDelegate.m */,
 				58A05CC118A9272600EF18AF /* Main.storyboard */,
 				58A05CC418A9272600EF18AF /* PPViewController.h */,
+				58A05CE418A9294C00EF18AF /* MBFDog.h */,
+				58A05CE518A9294C00EF18AF /* MBFDog.m */,
 				58A05CC518A9272600EF18AF /* PPViewController.m */,
 				58A05CC718A9272600EF18AF /* Images.xcassets */,
 				58A05CB618A9272600EF18AF /* Supporting Files */,
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tarrant Cutler";
 				TargetAttributes = {
+					58A05CAB18A9272600EF18AF = {
+						DevelopmentTeam = S6QJ73MBKY;
+					};
 					58A05CCC18A9272600EF18AF = {
 						TestTargetID = 58A05CAB18A9272600EF18AF;
 					};
@@ -252,6 +260,7 @@
 			files = (
 				58A05CC018A9272600EF18AF /* PPAppDelegate.m in Sources */,
 				58A05CC618A9272600EF18AF /* PPViewController.m in Sources */,
+				58A05CE618A9294C00EF18AF /* MBFDog.m in Sources */,
 				58A05CBC18A9272600EF18AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,10 +388,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Public Private Methods/Public Private Methods-Prefix.pch";
 				INFOPLIST_FILE = "Public Private Methods/Public Private Methods-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Public Private Methods/Public Private Methods-Prefix.pch";
 				INFOPLIST_FILE = "Public Private Methods/Public Private Methods-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

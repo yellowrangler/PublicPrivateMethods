@@ -7,6 +7,7 @@
 //
 
 #import "PPViewController.h"
+#import "MBFDog.h"
 
 @interface PPViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *string1 = @"Hello";
+//    NSLog(@"%@",string1);
+    MBFDog *myDog = [[MBFDog alloc] init];
+    [myDog thisIsaPublicMethod];
 }
 
 - (void)didReceiveMemoryWarning
